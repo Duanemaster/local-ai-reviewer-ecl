@@ -13,12 +13,15 @@ ECL is currently under active development. You may encounter occasional UI bugs,
 
 ## Features
 
-- **Fully Local & Private:** Powered by Ollama (`qwen2.5:7b-instruct`), meaning zero API costs and complete data privacy. Your code never leaves your machine.
-- **Modern Desktop GUI:** Built with `customtkinter` featuring a Split Layout (Code Editor on the left, Review Feedback on the right) instead of a basic terminal interface.
+- **Fully Local & Private:** Powered by Ollama (default: `qwen2.5:7b-instruct`), meaning zero API costs and complete data privacy. Your code never leaves your machine.
+- **Dynamic Model Selection:** Automatically detects and lists all locally installed Ollama models in a dropdown menu for easy switching.
+- **Modern Desktop GUI:** Built with `customtkinter` featuring a Split Layout (Code Editor with line numbers on the left, Review Feedback on the right).
+- **Custom Dark Dialogs:** Features custom-built dark themed alert and confirmation dialogs for a seamless, immersive UI experience without the glaring white native Tkinter popups.
 - **Thread-Safe & Responsive:** Asynchronous background processing ensures the UI never freezes during heavy code analysis.
 - **Anti-Hallucination Measures:** Strict system prompting and a large context window (`num_ctx=8192`) force the model to cite line numbers and avoid inventing errors.
 - **File Management:** Directly open `.py`, `.cs`, `.java`, `.js`, etc., and export the AI's review as a Markdown (`.md`) report.
-- **Severity Labeling:** Findings are automatically categorized into Bug, Warning, or Suggestion.
+- **Modular Architecture:** Cleanly separated codebase (`ecl/` package) handling UI components, AI logic, and application state independently.
+- **Standalone Executable:** Includes a build script (`build.bat`) to easily compile the application into a portable `.exe` file using PyInstaller.
 
 ## Prerequisites
 

@@ -1,2 +1,4 @@
 customtkinter
 ollama
+pillow
+pyinstaller
